@@ -1,0 +1,316 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container{
+    margin-bottom: 55px;
+    width: 100%;
+}
+.grid-top{
+    display: flex;
+    padding: 25px;
+    justify-content: center;    
+}
+.grid-top div{
+    width: 30%;
+}
+@media(max-width: 950px){
+    .grid-top{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .grid-top div{
+        width: 60%;
+    }
+    @media(max-width: 720px){
+        .grid-top div{
+            width: 80%;
+        }
+    }
+}
+h1{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.grid-top p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+.grid-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.grid-section{
+    height: 470px;
+    margin: 15px;
+}
+.grid-section:nth-child(3n +2){
+    margin-top: 120px;
+}
+.name{
+    position: relative;
+    margin: 0;
+    top: -5%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;    
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.author{
+    bottom: 0%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+.job{
+    position: relative;
+    text-align: left;
+    transform: rotate(90deg);
+    top: -344px;
+    left: 160px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+}
+img{
+    position: relative;
+    height: 470px;
+    width: 300px;
+}
+@media(max-width: 1095px){
+    .grid-section:nth-child(3n +2){
+        margin-top: 15px;
+    }
+    .grid-section:nth-child(2n){
+        margin-top: 120px;
+    }
+    @media(max-width: 720px) {
+        .grid-section{
+            height: 316px;
+        }
+        img{
+            height: 316px;
+            width: 200px;
+        }
+        .job{
+            top: -240px;
+            left: 112px;
+            font-size: 12px;
+        }
+        @media(max-width: 520px) {
+            .grid-section{
+                height: 234px;
+            }
+            img{
+                height: 234px;
+                width: 150px;
+            }
+            .job{
+                top: -181px;
+                left: 89px;
+                font-size: 10px;
+            }
+            @media(max-width: 420px) {
+                .grid-section{
+                    height: 156px;
+                }
+                img{
+                    height: 156px;
+                    width: 100px;
+                }
+                .job{
+                    top: -128px;
+                    left: 60px;
+                    font-size: 10px;
+                }
+                h1{
+                    font-size: 26px;
+                }    
+                .name, .grid-top p, h2{
+                    font-size: 14px;
+                }
+                .author{
+                    font-size: 12px;
+                } 
+                @media(max-width:320px){
+                    .grid-section:nth-child(2n){
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1471px){
+    .grid-top div{
+        width: 40%;
+    }
+    .grid-section{
+        height: 626px;
+    }
+    img{        
+        height: 626px;
+        width: 400px;
+    }    
+    .job{
+        top: -455px;
+        left: 212px;
+        font-size: 18px;
+    }
+    h1{
+        font-size: 56px;
+    }    
+    .name, .grid-top p, h2{
+        font-size: 28px;
+    }
+    .author{
+        font-size: 22px;
+    }    
+
+    @media(min-width: 1871px){
+        .grid-top div{
+            width: 40%;
+        }
+        .grid-section{
+            height: 783px;
+        }
+        img{        
+            height: 783px;
+            width: 500px;
+        }
+        .job{
+            top: -565px;
+            left: 270px;
+            font-size: 22px;
+        }
+        h1{
+            font-size: 72px;
+        }    
+        .name, .grid-top p, h2{
+            font-size: 38px;
+        }
+        .author{
+            font-size: 28px;
+        }   
+
+        @media(min-width: 2271px){
+            .grid-top{
+                margin-bottom: 200px;
+            }
+            .grid-top div{
+                width: 40%;
+            }
+            .grid-section{
+                height: 940px;
+            }
+            .grid-section:nth-child(3n +2){
+                margin-top: 180px;
+            }
+            img{        
+                height: 940px;
+                width: 600px;
+            }
+            .job{
+                top: -686px;
+                left: 320px;
+                font-size: 32px;
+            }
+            h1{
+                font-size: 110px;
+            }    
+            .name, .grid-top p, h2{
+                font-size: 45px;
+            }
+            .author{
+                margin-top: 100px;
+                font-size: 35px;
+            } 
+            @media(min-width: 2671px){
+                .grid-section{
+                    height: 1092px;
+                }
+                .grid-section:nth-child(3n +2){
+                    margin-top: 240px;
+                }
+                img{        
+                    height: 1092px;
+                    width: 700px;
+                }
+                .job{
+                    top: -786px;
+                    left: 375px;
+                    font-size: 32px;
+                }
+                @media(min-width: 3071px){
+                    .grid-section{
+                        height: 1248px;
+                    }
+                    img{        
+                        height: 1248px;
+                        width: 800px;
+                    }
+                    .job{
+                        top: -892px;
+                        left: 420px;
+                        font-size: 32px;
+                    }
+                    .name, .grid-top p, h2{
+                        font-size: 55px;
+                    }
+                    @media(min-width: 3471px){
+                        .grid-section{
+                            height: 1404px;
+                        }
+                        img{        
+                            height: 1404px;
+                            width: 900px;
+                        }
+                        .job{
+                            top: -1007px;
+                            left: 480px;
+                            font-size: 42px;
+                        }
+                        .author{
+                            font-size: 40px;
+                        } 
+                    }  
+                }  
+            }  
+        }
+    }
+}
