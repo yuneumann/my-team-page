@@ -3,6 +3,9 @@ html{
     padding: 0;
     width: 100%;
 }
+body{
+    background-color: #FAFAFA;
+}
 .container{
     margin-bottom: 55px;
     width: 100%;
